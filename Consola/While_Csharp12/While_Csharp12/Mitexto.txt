@@ -1,0 +1,5 @@
+﻿net
+while
+for
+loop
+andreu

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO_namespaceGenericlist", "POO_namespaceGenericlist\POO_namespaceGenericlist.csproj", "{FDADC392-EFAB-457F-AED2-C30A79679D2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDADC392-EFAB-457F-AED2-C30A79679D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDADC392-EFAB-457F-AED2-C30A79679D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDADC392-EFAB-457F-AED2-C30A79679D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDADC392-EFAB-457F-AED2-C30A79679D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

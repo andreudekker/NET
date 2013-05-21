@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService1ConASP", "WebService1ConASP\WebService1ConASP.csproj", "{D922975C-E2BF-4E6D-B0F7-9CA64F5ED0CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D922975C-E2BF-4E6D-B0F7-9CA64F5ED0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D922975C-E2BF-4E6D-B0F7-9CA64F5ED0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D922975C-E2BF-4E6D-B0F7-9CA64F5ED0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D922975C-E2BF-4E6D-B0F7-9CA64F5ED0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
