@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MiProyectoFinalAsp.Site1" %>
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Liberty by FCT</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item first"><span><a href="inicio.aspx">inicio</a></span></li>
+				<li><a href="registro.aspx">registro</a></li>
+				<li><a href="reporte.aspx">reporte</a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<div id="logo">
+		<h1><a href="#">Liberty </a></h1>
+		<p><em> template design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a></em></p>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">BIenveni</a>dos A LA comunidad</h2>
+				<p class="meta">Sunday, September 10, 2011 7:27 AM <span>Posted by <a href="#">Someone</a></span></p>
+				<div class="entry">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+				</div>
+			</div>		
+		
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Aliquam tempus</h2>
+					
+				<a href="www.facebook.com">facebook</a>
+                </li>				
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>Copyright (c) 2011 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>
+
+
