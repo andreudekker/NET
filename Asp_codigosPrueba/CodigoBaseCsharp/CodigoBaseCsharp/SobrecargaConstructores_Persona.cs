@@ -9,7 +9,7 @@ namespace CodigoBaseCsharp
     {
         public int edad=10;  //variable por defecto es O
         public string nombre="andreu"; //variables cadena vacia
-        public SobrecargaConstructores_Persona()    //los contructores no tienen ripo de dato de retorno
+        public SobrecargaConstructores_Persona()    //los constructores no tienen ripo de dato de retorno
         { 
         }
         public SobrecargaConstructores_Persona(int edad)

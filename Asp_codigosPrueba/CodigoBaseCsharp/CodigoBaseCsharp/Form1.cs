@@ -20,9 +20,14 @@ namespace CodigoBaseCsharp
         #region Constructores
         private void button1_Click(object sender, EventArgs e)
         {
-            Constructor objConstructor = new Constructor("Hola",545);
+            //forma de llamar  al constructor// Constructor objConstructor = new Constructor();
+            // label1.Text = Convert.ToString(objcons.precio);
+
+            Constructor objConstructor = new Constructor("Hola", 545);
             label1.Text = objConstructor.nombre;
             label2.Text = objConstructor.precio.ToString();
+
+   
             
         }
         #endregion
@@ -314,6 +319,11 @@ namespace CodigoBaseCsharp
 
         }
         #endregion
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
        
 
 

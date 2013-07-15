@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform_filtros", "winform_filtros\winform_filtros.csproj", "{1BF2E604-8727-460E-BA2F-E8E795A2291C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BF2E604-8727-460E-BA2F-E8E795A2291C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF2E604-8727-460E-BA2F-E8E795A2291C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF2E604-8727-460E-BA2F-E8E795A2291C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF2E604-8727-460E-BA2F-E8E795A2291C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
