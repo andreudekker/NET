@@ -1,0 +1,46 @@
+body {
+    background:rgba(0,0,0,0.2);
+}
+#contenedor{
+    width:800px;
+    background: white;
+    padding:30px;
+    margin: auto;
+    box-shadow: 0px,15px,25px rgba(0,0,0,0.2);
+    min-height: 500px;
+}
+h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
+footer {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+nav ul {
+    padding: 0px;
+     width: 100px;
+    list-style-type: none;
+    display: inline;
+}
+nav ul li {
+    padding: 5px;
+    float: left;
+    background: rgba(0,0,0,0.1);
+    margin:2px;
+    width: 100px;
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+#menutienda a {
+text-decoration:none;
+font-size:10px;
+background: rgba(0,0,0,0.1);
+padding: 5px;
+margin-top: 10px;   
+}
+

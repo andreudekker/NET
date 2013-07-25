@@ -1,0 +1,34 @@
+﻿@{    
+    var conexion = Database.Open("tienda");
+    var peticion = conexion.Query("SELECT * from productos ORDER BY id");
+    var grid = new WebGrid(peticion);
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    <link rel="stylesheet" href="/css/admin.css">
+    </head>
+    <body>
+       <div id="contenedor">
+                <div id="menulateral">
+                    <ul>
+                        <li><a href="nuevoproductoform">Crear un nuevo producto</a></li>
+                        <li><a href="listadoproductos">Ver la lista de productos</a></li>
+                        <li><a href="">Crear un nuevo producto</a></li>
+                        <li><a href="">Crear un nuevo producto</a></li>
+                        <li><a href="">Crear un nuevo producto</a></li>
+                        <li><a href="">Crear un nuevo producto</a></li>
+                    </ul>   
+                </div>
+                <div id="contenido">
+                   <h1>listado de productos</h1> 
+                    @grid.GetHtml();       
+                 </div>  
+                       
+        </div>
+    </body>
+</html>

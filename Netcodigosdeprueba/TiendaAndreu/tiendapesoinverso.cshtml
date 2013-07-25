@@ -1,0 +1,40 @@
+﻿@{
+   var titulo="andreudekker";
+   var conexion =Database.Open("tienda");
+   var peticion= conexion.Query("SELECT * FROM productos ORDER BY peso DESC");
+ 
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>@titulo</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="css/miestilo.css"/>
+     </head>
+    <body>
+             <div id="contenedor">
+                 @RenderPage("includes/Cabecera.cshtml")
+                 <section>
+                     @RenderPage("includes/Menutienda.cshtml")    
+                      <div id="productos">
+                        @foreach(var fila in peticion)
+                        {
+                            <hr>
+                            <h3>@fila.nombre</h3>
+                            <p>@fila.descripcion</p>
+                            <p>@fila.precio pesos</p>
+                            <p>@fila.peso kg</p>
+                        }
+                        
+                        </div>
+                 </section>
+                 
+                 @RenderPage("includes/PiedePagina.cshtml")            
+             </div>
+    
+    </body>
+</html>

@@ -1,0 +1,99 @@
+﻿@{
+   var titulo="andreudekker";
+   string subtitulo="TiendaOficial";
+   int numerodevisitantes =0;
+   DateTime hoy = DateTime.Today;
+   int edad=18;
+   string[] ciudad= new string[]{"Bogota","Cali","Manizales"};
+   int contador=1;
+
+   string mes="";
+   switch(DateTime.Now.Month)
+   {
+       case 1: mes="Enero";
+       break;
+       case 2: mes="Febrero";
+       break;
+       case 3: mes="Marzo";
+       break;
+       case 4: mes="Abril";
+       break;
+       case 5: mes="Mayo";
+       break;
+       case 6: mes="Junio";
+       break;
+       case 7: mes="julio";
+       break;
+       case 8: mes="Agosto";
+       break;
+       case 9: mes="Septiembre";
+       break;
+       case 10: mes="Octubre";
+       break;
+       case 11: mes="Noviembre";
+       break;
+       case 12: mes="Diciembre";
+       break;
+
+       default: break;
+   }
+}
+
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>Título de mi sitio</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+   <style>
+       .dia {
+       width: 20px;
+       height: 20px;
+       border: 1px solid black;
+       float: left;
+       }
+   </style>
+     </head>
+    <body>
+       <h1>@titulo</h1>
+        <h2>@subtitulo</h2>
+        <p>Eres el visitante No:@numerodevisitantes</p>
+        <p>Hoy es:@hoy</p>
+        <p>Numero de visitantes:@(numerodevisitantes+2)</p>
+        <p>Hoy es @DateTime.Now.Day  @mes de @DateTime.Now.Year</p>
+        <h3>Calendario</h3>
+        @for(var n=1; n<32;n++)
+        {
+             if(n==7 || n==14 || n==21 || n==28)
+        {
+            <div class="dia" style="background-color: #f00">@n</div>
+            <div style="clear: both;"></div>
+        }
+        else
+        {
+            <div class="dia" style="background-color: #808080">@n</div>
+        }
+
+        }
+        <div style="clear: both;"></div>
+        <p>Ya he terminado el bucle</p>
+        <p>La primera ciudad de la lista es: @ciudad[0]</p>
+        <p>La segunda ciudad de la lista es:  @ciudad[1]</p>
+        <p>La tercera ciudad de la lista es: @ciudad[2]</p>
+        <h3>Ciudades Con FOREACH</h3>
+        @foreach(var almacenaCiudad in ciudad)
+        {
+            <p>Las ciudades son:@almacenaCiudad</p>
+        }
+        
+       <h3>Bucle Contador</h3>
+        @while(contador <=10)
+        {
+            <p>Dentro de un bucle</p>
+                contador++;
+        }
+      
+    </body>
+</html>

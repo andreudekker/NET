@@ -1,0 +1,26 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        @{
+            var conexion=Database.Open("tienda");
+            var peticion= conexion.Query("Select * FROM productosvendidos");
+
+            var myChart = new Chart(width:500,height:300)
+            .AddTitle("GraficaCircular")
+            .AddSeries(chartType:"Pie",
+            xValue:peticion, xField:"tipoproducto",
+            yValues:peticion,yFields:"valor"
+            )
+            .Write();
+        }
+    </body>
+</html>

@@ -1,0 +1,49 @@
+﻿@{
+   var titulo="andreudekker";
+   string subtitulo="TiendaOficial";
+   string mes="";
+   switch(DateTime.Now.Month)
+   {
+       case 1: mes="Enero";
+       break;
+       case 2: mes="Febrero";
+       break;
+       case 3: mes="Marzo";
+       break;
+       case 4: mes="Abril";
+       break;
+       case 5: mes="Mayo";
+       break;
+       case 6: mes="Junio";
+       break;
+       case 7: mes="julio";
+       break;
+       case 8: mes="Agosto";
+       break;
+       case 9: mes="Septiembre";
+       break;
+       case 10: mes="Octubre";
+       break;
+       case 11: mes="Noviembre";
+       break;
+       case 12: mes="Diciembre";
+       break;
+
+       default: break;
+   }
+}
+<header>
+<h1>@titulo</h1>
+<h2>@subtitulo</h2> 
+<nav>
+<ul>
+<li><a href="default">inicio</a></li>
+<li><a href="SobreMi">sobremi</a></li>
+<li><a href="tienda">tienda</a></li>
+<li><a href="Contacto">contacto</a></li>   
+<li><a href="ofertas">ofertas</a></li>
+<li><a href="admin/escritorio">admin</a></li>                      
+</ul>
+</nav>
+<div style="clear: both"></div>
+</header>
